@@ -1,0 +1,147 @@
+﻿Diagnose log at 2023-09-10T14:00:36Z
+
+AppPath: /usr/local/bin/git-credential-manager
+InstallDir: /usr/local/share/gcm-core/
+Version: 2.3.2
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: macOS
+OSVersion: 13.4.1
+Reading environment variables... OK
+ Variables:
+__CF_USER_TEXT_ENCODING=0x1F5:0:2
+TERM=xterm-256color
+TERM_PROGRAM=vscode
+MallocNanoZone=0
+VSCODE_GIT_ASKPASS_NODE=/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)
+LOGNAME=admin8
+ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+PWD=/Users/admin8/Home/apps/super-music-player
+__CFBundleIdentifier=com.microsoft.VSCode
+GIT_TRACE2_PARENT_SID=b5a5b640-332c-47b7-ad8a-fff67dbea4fb
+LANG=en_US.UTF-8
+VSCODE_GIT_ASKPASS_MAIN=/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+VSCODE_GIT_IPC_HANDLE=/var/folders/72/x8nq6pcs413c8cdq8_w8sdsc0000gn/T/vscode-git-d685046d53.sock
+_=/usr/local/bin/git-credential-manager
+USER=admin8
+COMMAND_MODE=unix2003
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+COLORTERM=truecolor
+PATH=/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+GIT_ASKPASS=/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=--ms-enable-electron-run-as-node
+TMPDIR=/var/folders/72/x8nq6pcs413c8cdq8_w8sdsc0000gn/T/
+HOME=/Users/admin8
+SHLVL=1
+SHELL=/bin/zsh
+TERM_PROGRAM_VERSION=1.80.1
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.K1agCVVo7M/Listeners
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/var/folders/72/x8nq6pcs413c8cdq8_w8sdsc0000gn/T/'...
+Checking basic file I/O...
+Writing to temporary file '/var/folders/72/x8nq6pcs413c8cdq8_w8sdsc0000gn/T/3a774b28a2439a802263c137'... OK
+Reading from temporary file '/var/folders/72/x8nq6pcs413c8cdq8_w8sdsc0000gn/T/3a774b28a2439a802263c137'... OK
+Deleting temporary file '/var/folders/72/x8nq6pcs413c8cdq8_w8sdsc0000gn/T/3a774b28a2439a802263c137'... OK
+Testing IFileSystem instance...
+UserHomePath: /Users/admin8
+UserDataDirectoryPath: /Users/admin8/.gcm
+GetCurrentDirectory(): /Users/admin8/Home/apps/super-music-player
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:49298/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.39.2 (Apple Git-143)'
+Locating current repository... OK
+Git repository at '/Users/admin8/Home/apps/super-music-player/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:/Applications/Xcode.app/Contents/Developer/usr/share/git-core/gitconfig	credential.helper=osxkeychain
+file:/Applications/Xcode.app/Contents/Developer/usr/share/git-core/gitconfig	init.defaultbranch=main
+file:/Users/admin8/.gitconfig	credential.helper=
+file:/Users/admin8/.gitconfig	credential.helper=/usr/local/share/gcm-core/git-credential-manager
+file:/Users/admin8/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.ignorecase=true
+file:.git/config	core.precomposeunicode=true
+file:.git/config	remote.origin.url=https://github.com/maona-systems/super-music-player.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.master.remote=origin
+file:.git/config	branch.master.merge=refs/heads/master
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /Users/admin8/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /Users/admin8/.local/.IdentityService/msal.cache
+MacKeyChainAccountName: MSALCache
+MacKeyChainServiceName: Microsoft.Developer.IdentityService
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

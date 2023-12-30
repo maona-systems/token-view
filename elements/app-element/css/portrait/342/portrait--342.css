@@ -1,0 +1,4 @@
+@import url("/elements/app-element/css/portrait/342/portrait--342--1_00.css") SCREEN AND (MIN-ASPECT-RATIO:1); /* NARROWEST */
+@import url("/elements/app-element/css/portrait/342/portrait--342--1_13.css") SCREEN AND (MIN-ASPECT-RATIO:1.13); 
+@import url("/elements/app-element/css/portrait/342/portrait--342--1_26.css") SCREEN AND (MIN-ASPECT-RATIO:1.26); 
+@import url("/elements/app-element/css/portrait/342/portrait--342--1_39.css") SCREEN AND (MIN-ASPECT-RATIO:1.39); /* WIDEST */

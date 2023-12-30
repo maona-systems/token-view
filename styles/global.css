@@ -1,0 +1,65 @@
+:host([hidden]){
+
+    display:none;
+    
+}
+
+:host{
+    
+    box-sizing:border-box;
+    display:block;
+    overflow:hidden;
+    padding:0;
+    position:relative;
+    text-align:initial;
+
+}
+
+div{
+
+    box-sizing:border-box;
+    display:block;
+    overflow:hidden;
+    outline:none;
+    position:relative;
+    user-select:none;
+    /* scrollbar-width:none; */
+    white-space: nowrap;
+    vertical-align:top;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+.button{
+
+    cursor:pointer;
+    border-radius:3px;
+    display:inline-block;
+    -webkit-tap-highlight-color:0;
+    box-sizing:border-box;
+    margin:3px;
+    padding:5px;
+
+}
+
+.button:focus{
+
+    opacity: 0.4;
+
+}
+
+.text_input{
+
+    background-color:transparent;
+    border-width:0;
+    box-sizing:border-box;
+    margin:10px auto;
+    text-align:center;
+    outline:none;
+
+}

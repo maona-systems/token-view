@@ -1,0 +1,46 @@
+<div id="PANEL1"></div>
+
+<style>
+
+    @import url("/styles/global.css");
+    
+    :host{
+
+        background-color:lightsteelblue;
+        border-radius:5px;
+        width:531px;
+        height:357px;
+        overflow:scroll;
+        text-wrap:wrap;
+        font-family:Arial, Helvetica, sans-serif;
+        /* font-size:0%; */
+        
+    };
+
+    #PANEL1{
+        overflow:scroll;
+        /* padding:13px; */
+        display:flex;
+        flex-direction:column;
+        width:531px;
+        /* animation: flash 2s infinite; */
+
+    }
+
+    p{
+        /* width:100%; */
+        display:block;
+        margin-bottom:13px;
+        word-break:break-word;
+        text-wrap:wrap;
+        padding:13px;
+        overflow-x:scroll;
+        text-align:end;
+        /* overflow-wrap:break-word; */
+    }
+
+    :host([data-attribute=""]){};
+
+    #PANEL1{};
+    
+</style>

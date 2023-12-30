@@ -1,0 +1,4 @@
+@import url("/elements/app-element/css/portrait/441/portrait--441.css") SCREEN AND (MAX-WIDTH:441PX);
+@import url("/elements/app-element/css/portrait/408/portrait--408.css") SCREEN AND (MAX-WIDTH:408PX);
+@import url("/elements/app-element/css/portrait/375/portrait--375.css") SCREEN AND (MAX-WIDTH:375PX);
+@import url("/elements/app-element/css/portrait/342/portrait--342.css") SCREEN AND (MAX-WIDTH:342PX);

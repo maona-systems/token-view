@@ -1,0 +1,75 @@
+<div id="PANEL1">
+
+    <input id="password" class="text_input" type="password" placeholder="enter password"/>
+
+    <span id="continue" class="button">continue</span>
+    
+    <span id="abort" class="button">abort</span>
+
+</div>
+
+<style>
+
+    @import url("/styles/global.css");
+
+    @import url("/elements/prompt-element/prompt-element.css");
+
+    :host{
+
+        background-color:rgba(176,196,222,0.98);
+        border-radius:5px;
+        bottom:0;
+        font-family:Arial, Helvetica, sans-serif;
+        height:159px;
+        left:50%;
+        overflow:scroll;
+        position:fixed;
+        right:0;
+        text-wrap:wrap;
+        top:0;
+        transform:translate(-50%,13px);
+        visibility:hidden;
+        width:530px;
+        /* z-index:-1; */
+
+    }
+
+    :host([data-visible="true"]){
+
+        visibility:visible;
+
+    }
+
+    #PANEL1{
+        text-align:center;
+        padding:10px;
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    input.text_input{
+        width:327px;
+        height:37px;
+        font-size:37px;
+    }
+
+    button{
+
+        outline:none;
+
+    }
+
+    .button{
+        background-color:whitesmoke;
+        font-family:monospace;
+        height:28px;
+        width:auto;
+    }
+
+    .button:hover{
+        opacity:0.9;
+    }
+
+
+</style>

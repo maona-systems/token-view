@@ -1,0 +1,13 @@
+Sources of truth
+· History object
+· State object
+· Parameters object
+
+Consumers of truth
+· DOM
+
+The State object is the main source of truth
+
+The History object overrides the State object
+
+The Parameters object is immutable

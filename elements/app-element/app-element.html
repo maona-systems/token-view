@@ -1,0 +1,96 @@
+<div id="COLUMN1">
+
+    <div id="PANEL1" class="panel">
+        
+        <span id="init" class="button">init</span>
+        <span id="attest" class="button">attest</span>
+        <span id="start" class="button">start</span>
+        <span id="new" class="button">new</span>
+        
+    </div>
+    
+    <div id="PANEL2" class="panel">
+        
+        <span id="list" class="button">account_list</span>
+        <span id="sign_transaction" class="button">account_signTransaction</span>
+        <span id="sign_data" class="button">account_signData</span>
+        <span id="sign_typed_data" class="button">account_signTypedData</span>
+        <span id="ec_recover" class="button">account_ecRecover</span>
+        <span id="version" class="button">account_version</span>
+        
+    </div>
+
+    <modal-element></modal-element>
+
+</div>
+
+<prompt-element></prompt-element>
+
+<style>
+
+    @import url("/styles/global.css");
+
+    :host{
+
+        background-color:royalblue;
+        font-size:16px;
+        height:100vh;
+        text-align:center;
+        width:100vw;
+
+    }
+
+    #COLUMN1{
+
+        display:inline-flex;
+        flex-direction:column;
+        height:auto;
+        width:530px;
+
+    }
+
+    #PANEL1{
+
+        display:flex;
+        flex-direction:row;
+        height:auto;
+        justify-content:center;
+        margin:auto;
+        padding:10px;
+        width:100%;
+
+    }
+
+    #PANEL2{
+
+        align-items:start;
+        display:flex;
+        margin:auto;
+        flex-direction:column;
+        height:149px;
+        justify-content:start;
+        padding:10px;
+        position:relative;
+        overflow-y:scroll;
+        width:100%;
+
+    }
+
+    .button{
+        background-color:whitesmoke;
+        border-radius:3px;
+        box-sizing:border-box;
+        font-family:monospace;
+        height:28px;
+        margin:3px;
+        padding:5px;
+        width:auto;
+    }
+
+    div::-webkit-scrollbar {
+    
+        display:none;
+
+    }
+
+</style>

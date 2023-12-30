@@ -1,0 +1,23 @@
+html{
+
+    font-size:67px;
+    min-width:600px;
+    
+}
+
+:root{
+        
+    --color-a:rgb(238,238,238);
+    --color-b:rgb(224,224,224);
+    --color-c:rgb(189,189,189);
+    --color-d:rgb(158,158,158);
+    --color-e:rgb(230,81,0);
+    --color-f:rgb(33,33,33);
+
+}
+
+body,root-element{
+
+    display:contents;
+
+}

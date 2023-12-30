@@ -1,0 +1,91 @@
+NOTES
+
+// Be aware of order of execution in regards to asynchronous operations in Javascript
+
+// Be aware of the rules of execution of modules in javascript 
+
+*
+
+an app is a tree of html-elements
+
+starting with the root-element then the app-element
+
+an element has a lifecycle
+
+an element is constructed and then connected
+
+then it waits for events and responds to them
+
+an element responds to events and to changes of truth
+
+* 
+
+landscape and portrait, minimum size aspect is 1:1 (w:h) max 1.77:1
+
+*
+
+REQUIREMENTS
+
+A SET OF FEATURES TO IMPLEMENT
+
+A SET OF CONDITIONS TO FULFILL
+
+*
+
+THE BROWSER IS AN APPLICATION THAT READS HTML-APPS
+
+AN HTML APP IS AN INTERACTIVE GRAPHICAL CONTEXT
+
+THE BROWSER PROVIDES A JAVASCRIPT CONTEXT FOR WRITING HTML-APPS
+
+THE BROWSER PROVIDES A SET OF JAVASCRIPT APIS FOR IMPLEMENTING FEATURES
+
+*
+
+WE MAKE CHANGES TO DOM AND STATE VIA EVENT-LISTENERS
+
+*
+
+PRINCIPLES
+
+FUNCTION COMPOSITION
+
+HIGHER-ORDER FUNCTIONS
+
+PURE FUNCTIONS
+
+MODULARITY
+
+IMMUTABILITY
+
+* 
+
+USE CLASS SELECTORS TO APPLY ONE STYLE TO MANY
+
+USE ATTRIBUTE SELECTORS TO RESTYLE AN ELEMENT
+
+*
+
+KEY EVENTS
+
+LOAD - RELOAD - POPSTATE
+
+*
+
+https://developer.mozilla.org/en-US/docs/Web/API
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML
+
+https://html.spec.whatwg.org/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP

@@ -1,0 +1,18 @@
+{
+  "author": "tfarirayi1@maona-systems",
+  "description": "View and manage your Ethereum accounts",
+  "keywords": [
+    "Ethereum",
+    "Crypto"
+  ],
+  "license": "ISC",
+  "main": "scripts/main.js",
+  "name": "Token View",
+  "scripts": {
+    "start": "nw"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "nw": "^0.82.0"
+  }
+}

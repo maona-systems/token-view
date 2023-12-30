@@ -1,0 +1,59 @@
+Clef handles:
+· Account creation 
+· Key management
+· Signing transactions/data
+
+The first time Clef is used it needs to 
+be initialized with a master seed that 
+unlocks Clef's secure vault
+
+Clef will use the vault to store 
+passwords for keystores, javascript 
+auto-signing rules and hashes of rule 
+files
+
+It is extremely important to remember 
+the master seed and keep it secure. It 
+allows access to the accounts under 
+Clef's management.
+
+New accounts can be created using 
+Clef's account new method. This 
+generates a new key pair and adds them 
+to the given keystore directory
+
+clef newaccount --keystore sepolia-data/keystore
+
+It is also possible to create an 
+account by importing an existing 
+private key
+
+Keys are not stored by Clef, they are 
+only accessed using account passwords 
+that Clef does store in its vault. 
+
+The keys themselves are stored in an 
+external keystore whose security is the 
+responsibility of the user
+
+Clef implements a secure, encrypted 
+vault for storing sensitive data. This 
+vault is encrypted using a masterseed
+
+Since this masterseed is used to 
+decrypt the secure vault, and its 
+security is not handled by Clef, it 
+could represent a security 
+vulnerability if the user does not 
+implement best practise in keeping it 
+safe
+
+Keys are not stored by Clef, they are 
+only accessed using account passwords 
+that Clef does store in its vault. The 
+keys themselves are stored in an 
+external keystore whose security is the 
+responsibility of the user. If the keys 
+are compromised, the account is not 
+safe irrespective of the security 
+benefits derived from Clef

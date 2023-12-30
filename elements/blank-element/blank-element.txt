@@ -1,0 +1,64 @@
+Sources of truth
+· History object
+· State object
+· Parameters object
+
+Consumers of truth
+· DOM
+
+The State object is the main source of truth
+
+The History object overrides the State object
+
+The Parameters object is immutable
+
+*
+
+An HTML app is a tree of HTML elements
+
+An element has the following aspects: function-attributes, data-attributes, lifecycle-callbacks, event-listeners, dom, cssom
+
+When an element is created, its lifecycle callbacks are executed, then it waits for events
+
+When a relevant event is dispatched, the event-listeners are executed
+
+Elements respond to events by changing their state or dom or doing some other OPERATION
+
+Events are triggered by user or browser or code
+
+We also implement "smart variables" using getters and setters. Smart variables react when modified
+
+When the state changes, the dom must be updated
+
+We can change the dom via lifecycle callbacks, event-listeners and smart-variables
+
+* 
+
+INCREASING THE WIDTH INCREASES THE ASPECT RATIO
+INCREASING THE HEIGHT REDUCES THE ASPECT RATIO
+
+START WITH A SQUARE OF A CERTAIN WIDTH
+
+INCREASE THE ASPECT RATIO TO 2.39/1
+INCREASE THE WIDTH
+
+OR 
+
+DECREASE THE ASPECT RATIO TO 1/2.39
+INCREASE THE HEIGHT
+
+THEN 
+
+WIDEN THE WIDTH OF THE SQUARE AND REPEAT
+
+DEVICE TYPES:
+.MOBILE
+.TABLET
+.LAPTOP
+.DESKTOP
+.TV
+.ANAMOPRHIC
+.PANORAMIC
+
+
+
