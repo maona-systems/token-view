@@ -20,10 +20,8 @@ const win=nw.Window.get();
 
 console.log(this);
 
-win.on("close",(data)=>{
+win.on("close",()=>{
 
-    console.log(this);
-    
-    this.close(true);
+    win.close(true);
 
 });

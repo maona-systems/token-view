@@ -1,4 +1,4 @@
-export default class PromptElement extends CustomHTMLElement {
+export default class SignDataPrompt extends CustomHTMLElement {
 
     constructor(){
 
@@ -36,8 +36,9 @@ export default class PromptElement extends CustomHTMLElement {
 
         SELF.hide=function(){
 
-            SELF.DOM["password_input"].value="";
-
+            SELF.DOM["address_input"].value="";
+            SELF.DOM["data_input"].value="";
+            SELF.DOM["type_input"].value="";
             SELF.setAttribute("data-visible",false);
             
         };
@@ -48,31 +49,25 @@ export default class PromptElement extends CustomHTMLElement {
             
             SELF.DOM["PANEL1"]=SELF.shadowRoot.querySelector(`#PANEL1`);
 
+            SELF.DOM["type_input"]=SELF.shadowRoot.querySelector(`#type`);
+            
+            SELF.DOM["address_input"]=SELF.shadowRoot.querySelector(`#address`);
+            
+            SELF.DOM["data_input"]=SELF.shadowRoot.querySelector(`#data`);
+
             SELF.DOM["abort_button"]=SELF.shadowRoot.querySelector(`#abort`);
             
             SELF.DOM["continue_button"]=SELF.shadowRoot.querySelector(`#continue`);
             
-            SELF.DOM["password_input"]=SELF.shadowRoot.querySelector(`#password`);
-
             Object.freeze(SELF.DOM);
             
-        };
-
-        SELF.password=async function(){
-
-            console.debug("password");
-
-            SELF.show();
-
-            return await SELF.readPassword();
-
         };
         
         SELF.prepare_element=function(){
             
             console.debug("prepare_element");
             
-            SELF.uid="PromptElement";
+            SELF.uid="SignDataElement";
 
             WINDOW.Elements[SELF.uid]=SELF;
             
@@ -92,34 +87,36 @@ export default class PromptElement extends CustomHTMLElement {
         
         };
 
-        SELF.readPassword=function(){
+        SELF.prompt=function(){
+            
+            SELF.show();
 
             return new Promise(function(resolve,reject){
 
                 function submit(){
 
-                    resolve(SELF.DOM["password_input"].value);
+                    const _address=SELF.DOM["address_input"].value;
+    
+                    const _data=SELF.DOM["data_input"].value;
                     
+                    const _type=SELF.DOM["type_input"].value;
+
+                    resolve([_type,_address,_data])
+        
                     SELF.setAttribute("data-visible",false);
-
-                    SELF.DOM["password_input"].value="";
-
+                    
+                    SELF.hide();
+        
                 };
 
-                SELF.DOM["password_input"].onkeydown=function password_keydown(data){
+                SELF.onkeydown=function(data){
 
                     if(data.key=="Enter") submit();
-
+                    
                 };
-
-                SELF.DOM["continue_button"].onkeydown=function(data){
-
-                    if(data.key=="Enter") submit();
-
-                };
-
+                
                 SELF.DOM["continue_button"].onclick=function(){
-
+                    
                     submit();
 
                 };
@@ -128,12 +125,19 @@ export default class PromptElement extends CustomHTMLElement {
 
         };
 
-
         SELF.setup_dom=async function(){
 
             console.debug("setup_dom");
 
-            await SELF.GetHTML("/elements/prompt-element/prompt-element.html");
+            try{
+
+                await SELF.GetHTML("/elements/sign-data-prompt/sign-data-prompt.html");
+
+            }catch(e){
+
+                console.error(e.message);
+
+            };
 
             SELF.map_dom();
 
@@ -153,18 +157,15 @@ export default class PromptElement extends CustomHTMLElement {
 
             });
 
-            SELF.DOM["password_input"].addEventListener("keydown",function(data){
-            
-
-            });
-
             SELF.DOM["continue_button"].addEventListener("keydown",function(data){
 
+                // if(data.key=="Enter") SELF.submit();
 
             });
 
             SELF.DOM["continue_button"].addEventListener("click",function(){
 
+                // SELF.submit();
 
             });
             
@@ -363,7 +364,7 @@ export default class PromptElement extends CustomHTMLElement {
 
             SELF.setAttribute("data-visible",true);
             
-            SELF.DOM["password_input"].focus();
+            SELF.DOM["type_input"].focus();
 
         };
 

@@ -1,10 +1,14 @@
 <div id="PANEL1">
 
-    <input id="password" class="text_input" type="password" placeholder="enter password"/>
+    <input id="type" class="text_input" type="text" placeholder="data-type"/>
 
-    <span id="continue" class="button">continue</span>
+    <input id="address" class="text_input" type="text" placeholder="address"/>
     
-    <span id="abort" class="button">abort</span>
+    <input id="data" class="text_input" type="text" placeholder="data"/>
+
+    <span id="continue" tabindex="1" class="button">continue</span>
+    
+    <span id="abort" tabindex="1" class="button">abort</span>
 
 </div>
 
@@ -12,7 +16,7 @@
 
     @import url("/styles/global.css");
 
-    @import url("/elements/prompt-element/prompt-element.css");
+    @import url("/elements/sign-data-prompt/sign-data-prompt.css");
 
     :host{
 
@@ -20,7 +24,7 @@
         border-radius:5px;
         bottom:0;
         font-family:Arial, Helvetica, sans-serif;
-        height:159px;
+        height:359px;
         left:50%;
         overflow:scroll;
         position:fixed;
@@ -52,6 +56,7 @@
         width:327px;
         height:37px;
         font-size:37px;
+        text-align:start;
     }
 
     button{

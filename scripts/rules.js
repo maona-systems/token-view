@@ -12,12 +12,18 @@ function OnInputRequired(){
 
 function ApproveNewAccount(){
 
-    return "Approve";
+    return "Reject";
 
 };
 
 function ApproveListing(){
 
-    return "Approve";
+    return "Reject";
+
+};
+
+function ApproveSignData(){
+
+    return "Reject";
 
 };
